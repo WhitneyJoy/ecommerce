@@ -18,7 +18,8 @@ app.get('/api/data', function (req, res) {
 
 app.post('/api/data', function (req, res) {
   let theInfoWePosted = req.body.firstName;
-  res.send(theInfoWePosted);
+  //sending the id of the item and you want item to be sent to the cart table
+  res.render(order.html);
 });
 
 

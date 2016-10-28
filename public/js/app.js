@@ -4,7 +4,7 @@ function fetchData(){
      method: "GET",
      success: function(data){
        // might want to pretty print things here :)
-       document.getElementById("main").innerHTML = "<p>" + data + "</p>";
+       document.getElementById("add").innerHTML = "<p>" + data + "</p>";
      }
    });
  }
@@ -16,7 +16,7 @@ function sendData(x = {}){
     data: x,
     success: function(output){
       // might want to pretty print things here :)
-      document.getElementById("main").innerHTML = "<p>" + output + "</p>";
+      document.getElementById("add").innerHTML = "<p>" + output + "</p>";
     }
   });
 }
