@@ -66,29 +66,29 @@
 
             <div class="row">
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <!-- <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="images/hipster.jpeg" alt="">
                         <div class="caption">
                             <h4 class="pull-right">$25</h4>
                             <h4><a href="#">The Hipster</a>
                             </h4>
-                            <button type="button" onclick="sendData();" class="btn" class="btn:hover">Add to Cart</button>
+                            <button id="add"  onclick="sendData()" type="button" onclick="sendData();" class="btn" class="btn:hover">Add to Cart</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-sm-4 col-lg-4 col-md-4">
+                <!-- <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
                         <img src="images/artist.jpeg" alt="">
                         <div class="caption">
                             <h4 class="pull-right">$25</h4>
                             <h4><a href="#">The Artist</a>
                             </h4>
-                            <button type="button" class="btn" class="btn:hover">Add to Cart</button>
+                            <button id="add"  onclick="sendData()" type="button" class="btn" class="btn:hover">Add to Cart</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="col-sm-4 col-lg-4 col-md-4">
                     <div class="thumbnail">
@@ -97,7 +97,7 @@
                             <h4 class="pull-right">$25</h4>
                             <h4><a href="#">The Classic</a>
                             </h4>
-                            <button id="add" type="button" class="btn" class="btn:hover">Add to Cart</button>
+                            <button id="data" onclick="fetchData()" type="button" class="btn" class="btn:hover">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -135,10 +135,25 @@
   //   $(document).ready(function(){
   //   fetchData();
   // });
+//   $("#add").click(function(){
+//     let data = {id: 4};
+//     sendData(data);
+// });
+//   $("#add").click(function(){
+//     let data = {id: 3};
+//     sendData(data);
+//   });
+//   $("#add").click(function(){
+//     let data = {id: 2};
+//     sendData(data);
+//   });
 
   $("#add").click(function(){
-    let data = {name: "Whitney"};
+    let data = {id: 1};
     sendData(data);
+  });
+  $(document).ready(function(){
+  fetchData();
 });
     </script>
 
